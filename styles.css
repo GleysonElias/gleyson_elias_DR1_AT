@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #5a7f78;
+  padding-left: 100px;
+  width: 1000px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: #f7f8fc;
+}
+
+h1 {
+  color: #314c53;
+  padding-left: 70px;
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+
+h3 {
+  color: #314c53;
+  padding: 20px 0px 0px 100px;
+}
+
+.titulo {
+  color: #f7f8fc;
+}
+
+/* .color1 { #010300 };
+.color2 { #314c53 };
+.color3 { #5a7f78 };
+.color4 { #bbdec6 };
+.color5 { #f7f8fc }; 
+.color6 { #E1E2E6 }; */
+
+#cabecalho {
+  background-color: #314c53;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+header {
+  /* background-color: red; */
+  height: 50px;
+  width: 40vw;
+  color: #f7f8fc;
+}
+
+nav {
+  /* background-color: red; */
+  height: 50px;
+  width: 60vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+ul.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.item:hover {
+  background-color: #bbdec6;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: #314c53;
+}
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-top: 20px;
+}
+
+.linkedin {
+  border: 3px solid #314c53;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #314c53;
+}
+
+.curriculo {
+  background-color: #314c53;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #f7f8fc;
+}
+
+.linkedin a{
+  color: #314c53; 
+}
+
+.linkedin:hover, .linkedin a:hover{
+  color: #5a7f78;
+  border-color: #5a7f78;
+}
+
+.curriculo:hover, .curriculo a:hover{
+  color: #bbdec6;
+  border-color: #bbdec6;
+}
+
+main {
+  background-color: #f7f8fc;
+  width: 100vw;
+  flex: 1;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  top: 100px;
+  line-height: 2;
+}
+
+main aside {
+  background-color: #010300;
+  height: 50px;
+  width: 120px;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+  font-size: 17px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 100px 100px 20px 100px;
+}
+
+#eu, #projetos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #314c53;
+}
+
+#email, #wpp {
+  color: #314c53;
+}
+
+.fotoPerfil {
+  width: 210px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #314c53;
+  box-shadow: 2px 4px 6px 10px #bbdec6;
+}
+
+#habilidades {
+  background-color: #e1e2e6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#habilidades img{
+  height: 300px;
+}
+
+#formacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#formacao img{
+  height: 300px;
+}
+
+#experiencias {
+  background-color: #314c53;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tituloIntercambio {
+  gap: 100px;
+  align-items: center;
+}
+
+.tituloIntercambio h1{
+  font-family: "Dancing Script", cursive;
+}
+
+.fotosIntercambio img {
+  height: 300px;
+  border: 2px solid #bbdec6;
+  border-radius: 5%;
+}
+
+.fotoArtigo {
+  height: 300px;
+  float: right;
+  padding: 15px 0px 0px 15px;
+}
+
+#experiencias h1,
+#experiencias h3,
+#experiencias p {
+  color: #e1e2e6;
+  padding-left: 10px;
+}
+
+#experiencias h1 {
+  font-size: 50px;
+}
+
+footer {
+  background-color: #010300;
+  color: white;
+  height: 100px;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  z-index: 0;  
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span{
+  width: 7vw;
+  text-align: center;
+}
